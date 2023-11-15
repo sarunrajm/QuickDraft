@@ -1,0 +1,123 @@
+
+.landing-container {
+    position: relative;
+    text-align: center;
+
+}
+
+.landing-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size:cover;
+    height: 100vh;
+    z-index: -1;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    padding-top: 40px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: rgb(77, 77, 77);
+}
+
+.features {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.feature {
+    flex: 1;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.feature h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.cta {
+    padding: 20px;
+}
+
+.cta h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    color: #656565;
+    margin-bottom: 20px;
+    padding: 8px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+.cta-button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    margin-top: 90px;
+}
+
+.cta-button:hover {
+    background-color: #fdfdfd;
+    color: #0c0c0c;
+}
+
+.app-footer {
+    margin-top: 100px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .feature {
+        flex: 1 0 100%; 
+        margin: 10px 0;
+    }
+
+    .cta p {
+        margin-bottom: 10px;
+    }
+
+    .cta-button {
+        margin: 10px;
+    }
+}

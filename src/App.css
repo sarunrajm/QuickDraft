@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+
+
+.ql-editor {
+    max-height: 5in;
+    min-height: 5in;
+    max-width: 690px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ql-editor strong {
+    font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.savebtn {
+    margin-left: 360px;
+    margin-bottom: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body::-webkit-scrollbar {
+    display: none;
 }
 
-.App-link {
-  color: #61dafb;
+.cardbody {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardbody:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: #000000;
+}
+
+.app,
+.LLL {
+    background-image: url(https://images.unsplash.com/photo-1533230019569-ea3cb2b98b1f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 100vh;
+}
+
+
+
+@media (max-width: 320px) {
+    .ql-editor {
+        max-width: 300px;
+    }
+
+    .savebtn {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .cardbody:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -6px inset, rgba(0, 0, 0, 0.3) 0px 6px 12px -6px inset;
+        text-decoration: none;
+    }
 }
